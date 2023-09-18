@@ -1,15 +1,9 @@
-.container-header{
-    width: 100%;
-    height: 610px;
-    background-size: cover;
-    background-position: center;
-    background: url('../../assets/img/img_def.jpg') no-repeat;
-}
+
 
 .colTwo{
     display: flex;
     justify-content: center;  
-    line-height: 64px;
+    line-height: 10px;
 }
 
 .colOne{
@@ -17,11 +11,6 @@
     justify-content: flex-start;   
 }
 
-.colThree{
-    display: flex;
-    justify-content: center;
-    margin-top: 10%;
-}
 
 .li-nav{
     margin-right: 15px;
@@ -30,26 +19,69 @@
     color: White;
     font-weight: bold;
     cursor: pointer;
+    margin-top: -15px;
 }
 
 .title-company{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
     font-weight: bolder;
-    color: white;
-    font-size: 30px;
-    margin-left: 3%;
+    color: #77fde8;
+    font-size: 25px;
+    margin-left: 3%; 
+    line-height: 2px;
 }
 
-.lema{  
-    font-size: 15px;
+.banner{
+    background-color: #23282D;
+    height: 40px;
+}
+
+.bannerTwo{
+    background-color: #121212;
+    height: 55px;
+}
+
+img{
+    width: 15px;
+    height: 15px;
+    margin-top: 3%;
+    position: absolute;
+}
+
+.label{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: italic;
-    font-weight: bolder;
     color: white;
-    font-size: 36px;
+    font-size: 15px;
+    margin-left: 7%;
+    line-height: 41px;
 }
 
+.background{
+    background-color: black;
+    width: 100%;
+    height: 42px;
+    position: absolute;
+}
 
+.img-menu{   
+    width: 48px;
+    height: 46px;
+    margin-top: -1%;
+}
 
-    
+.mobile{
+    height: 100%;
+    width: 100%; 
+    background-color: black !important;
+}
+
+ion-content{
+    background-color: black;
+}
+
+@media screen and (max-width: 992px)  {
+    .container-header{
+        height: 50px;
+    }
+}

@@ -1,50 +1,101 @@
-<ion-row class="content-label">
-    <ion-col class="products" size-lg="12" size-md="12" size-xl="12" size-xs="12">
-        Productos
+<div *ngIf="isDesktop" class="container-header container-img">  
+  <ion-row>
+    <ion-col class="colThree" size="12">
+      <h1 class="lema">"Transformando Datos en Decisiones, Innovando Tu Futuro"</h1>
     </ion-col>
-</ion-row>
+   </ion-row> 
+  </div> 
 <ion-row class="container-home">
-    <ion-col size-lg="4" size-md="12" size-xl="4" size-xs="12">
-        <ion-card  class="card">
-            <img alt="Silhouette of mountains" src="../../assets/img/base_datos.jpg" />
-            <ion-card-header>
-              <ion-card-title>Base de Datos</ion-card-title>
-              <ion-card-subtitle>Lorem Ipsum es simplemente el texto de relleno de.... </ion-card-subtitle>
-            </ion-card-header>      
-            <ion-card-content>
-                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
-                Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor 
-            </ion-card-content>
-          </ion-card>
-    </ion-col>
-    <ion-col size-lg="4" size-md="12" size-xl="4" size-xs="12">
-        <ion-card  class="card">
-            <img alt="Silhouette of mountains" src="../../assets/img/ana_datos.jpg" />
-            <ion-card-header>
-              <ion-card-title>Análisis de Datos</ion-card-title>
-              <ion-card-subtitle>Lorem Ipsum es simplemente el texto de relleno de.... </ion-card-subtitle>
-            </ion-card-header>      
-            <ion-card-content>
-                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
-                Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor 
-            </ion-card-content>
-          </ion-card>
-    </ion-col>
-    
-    <ion-col size-lg="4" size-md="12" size-xl="4" size-xs="12">
-        <ion-card  class="card">
-            <img alt="Silhouette of mountains" src="../../assets/img/machine_learning.png" />
-            <ion-card-header>
-              <ion-card-title>Machine Learning</ion-card-title>
-              <ion-card-subtitle>Lorem Ipsum es simplemente el texto de relleno de.... </ion-card-subtitle>
-            </ion-card-header>      
-            <ion-card-content>
-                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
-                Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor 
-            </ion-card-content>
-          </ion-card>
-    </ion-col>
-    
-    
+  
+  <ion-row class="content-label margin">
+      <ion-col class="products" size-lg="12" size-md="12" size-xl="12" size-xs="12">
+        Nuestros servicios para clientes
+      </ion-col>
+      <ion-col class="products-text" size-lg="12" size-md="12" size-xl="12" size-xs="12">
+        Podemos apoyarlo sin importar dónde se encuentre
+      </ion-col>
+  </ion-row>
+
+<ion-row style="margin-top: 10%;">
+  <ion-col class="margin-left" size-lg="4" size-md="12" size-xl="4" size-xs="12">
+    <ion-card  class="card">
+        <img alt="Silhouette of mountains" src="../../assets/img/base_datos.jpg" />
+        <ion-card-header>
+          <ion-card-title>Base de Datos</ion-card-title>             
+        </ion-card-header>      
+        <ion-card-content>
+          En Tecnobilateral, creamos bases de datos personalizadas para satisfacer las necesidades específicas de tu negocio. Diseñamos esquemas de bases de datos eficientes y seguros.
+        </ion-card-content>
+      </ion-card>
+</ion-col>
+<ion-col class="margin-left" size-lg="4" size-md="12" size-xl="4" size-xs="12">
+    <ion-card  class="card">
+        <img alt="Silhouette of mountains" src="../../assets/img/ana_datos.jpg" />
+        <ion-card-header>
+          <ion-card-title>Análisis de Datos</ion-card-title>            
+        </ion-card-header>      
+        <ion-card-content>
+          Comenzamos por explorar y limpiar tus datos para garantizar su calidad y confiabilidad. Identificamos datos faltantes, atípicos o incorrectos, y los corregimos para que puedas basar tus decisiones en información precisa.
+        </ion-card-content>
+      </ion-card>
+</ion-col>
+<ion-col class="margin-left" size-lg="4" size-md="12" size-xl="4" size-xs="12">
+    <ion-card  class="card">
+        <img alt="Silhouette of mountains" src="../../assets/img/machine_learning.png" />
+        <ion-card-header>
+          <ion-card-title>Machine Learning</ion-card-title>             
+        </ion-card-header>      
+        <ion-card-content>
+          Utilizamos técnicas de machine learning para desarrollar modelos predictivos que te ayuden a anticipar tendencias, identificar oportunidades y tomar decisiones más informadas.
+        </ion-card-content>
+      </ion-card>
+</ion-col>
 </ion-row>
+
+    <div class="spaceTwo">
+      <ion-row  class="content-label">
+        <ion-col size-lg="12" size-md="12" size-xl="12" size-xs="12">
+          <h1 class="title-text">Beneficios de la ciencia de datos</h1>
+          <div class="border"></div>
+        </ion-col>
+        <ion-col size-lg="12" size-md="12" size-xl="12" size-xs="12">
+          <h1 class="title-border"> Descubra por qué la ciencia de datos ofrece un valor tan increíble.</h1>
+        </ion-col>     
+      </ion-row>
+    </div>
+
+    <ion-row style="margin-top: 10% ;">
+      <ion-col class="description-one" size-lg="6" size-md="12" size-xl="6" size-xs="12">
+       <img class="img-01" src="../../assets/img/portfolio-1.jpg" alt="img_01">
+      </ion-col>
+      <ion-col class="description-one" size-lg="6" size-md="12" size-xl="6" size-xs="12">
+        <ion-row class="ciencia">         
+            La ciencia de datos ayuda a su organización a optimizar sus procesos, toma de decisiones y estrategia. Es un concepto de alto nivel que sigue principios científicos básicos para responder preguntas a partir de datos.
+            Al elegir Tecnobilateral para su proyecto de aprendizaje automático, puede estar seguro de que está aprovechando una consultoríacon amplia experiencia, que ayuda a empresas como la suya a descubrir valor a partir de sus datos.                
+            <button (click)="show()" class="more">Descubrí más beneficios...</button>  
+        </ion-row>     
+      
+      </ion-col>
+    </ion-row>   
+</ion-row>
+
+<ng-container *ngIf="showCards">
+  <ion-row class="container-card-text">
+    <ion-col *ngFor="let card of cards"  size-lg="4" size-md="12" size-xl="4" size-xs="12">
+      <div class="content-card">
+        <img class="img-card" src="{{card.img}}" alt="card-img">
+        <h1 class="card-title">{{card.title}}</h1>
+        <ion-row>
+         <h5 class="text-card"> {{card.text}}</h5>
+        </ion-row>
+      </div>    
+    </ion-col>
+  </ion-row>
+</ng-container>
+
+<div class="img-ba">
+ 
+</div>
+
+
 

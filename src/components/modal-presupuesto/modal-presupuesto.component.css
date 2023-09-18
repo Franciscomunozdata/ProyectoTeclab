@@ -1,0 +1,60 @@
+.errorLabel{
+    background-color: #d562625c;
+    width: 100%;
+    border-top: 1px solid red;
+    color: #e34040;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
+textarea{
+    width: 100%;
+    height: 125px;
+}
+
+
+input{
+    border: none;
+    border-bottom: 1px solid #00000026;
+    width: 100%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+
+.detail{
+    background-color: #77fde8;
+    width: 100px;
+    color: black;
+    border-radius: 10px;   
+    margin-left: 10px; 
+    cursor: pointer;
+}
+.noDetail{
+    background-color: #77fde965;
+    width: 100px;
+    color: black;
+    border-radius: 10px;
+    margin-left: 10px; 
+    cursor: pointer;
+}
+
+.cancel{
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 100px;
+    color: black;
+    border-radius: 10px; 
+    cursor: pointer;
+}

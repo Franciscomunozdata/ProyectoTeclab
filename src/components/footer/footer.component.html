@@ -1,26 +1,55 @@
 <div class="footer">
-    <ion-row class="content-location">
+    <!-- <ion-row class="content-location">
         <ion-col size-lg="12" size-md="12" size-xl="12" size-xs="12">
             <img src="../../assets/img/localizacion.png" alt="icon_localidad"> 
             <label>Cuidad Autónoma de Buenos Aires, Argentina</label>
         </ion-col>        
-    </ion-row>
-    <ion-row style="margin-left: 1%;">     
-            <ion-col class="img-col"  size-lg="1" size-md="12" size-xl="1" size-xs="12">
+    </ion-row>-->   
+    <ion-row *ngIf="isDesktop" class="img-col" style="margin-left: 1%;">     
+            <ion-col class="img-col"  size-lg="1" size-md="1" size-xl="1" size-xs="1">
                 <img class="img_redes" src="../../assets/img/instagram.png" alt="icon_instagram"> 
             </ion-col>  
-            <ion-col class="img-col"  size-lg="1" size-md="12" size-xl="1" size-xs="12">
+            <ion-col class="img-col"  size-lg="1" size-md="1" size-xl="1" size-xs="1">
                 <img  class="img_redes" src="../../assets/img/facebook.png" alt="icon_instagram"> 
             </ion-col>  
-            <ion-col class="img-col" size-lg="1" size-md="12" size-xl="1" size-xs="12">
-                <img class="img_redes"src="../../assets/img/whatsapp.png" alt="icon_instagram"> 
+            <ion-col class="img-col" size-lg="1" size-md="1" size-xl="1" size-xs="1">
+                <img (click)="openWA()" class="img_redes"src="../../assets/img/whatsapp.png" alt="icon_instagram"> 
             </ion-col>      
-    </ion-row>
-    
-    <!-- <ion-row>
-        <ion-col size-lg="12" size-md="12" size-xl="12" size-xs="12">
-            © 2023 Tu Compañía. Todos los derechos reservados.
+    </ion-row> 
+    <ion-row *ngIf="isMobile" class="bannerTwo">
+        <ion-col class="img-col"  size-lg="1" size-md="1" size-xl="1" size-xs="1">
+            <img class="img_redes" src="../../assets/img/instagram.png" alt="icon_instagram"> 
+        </ion-col>  
+        <ion-col class="img-col"  size-lg="1" size-md="1" size-xl="1" size-xs="1">
+            <img  class="img_redes" src="../../assets/img/facebook.png" alt="icon_instagram"> 
+        </ion-col>  
+        <ion-col class="img-col" size-lg="1" size-md="1" size-xl="1" size-xs="1">
+            <img (click)="openWA()" class="img_redes"src="../../assets/img/whatsapp.png" alt="icon_instagram"> 
+        </ion-col>   
+        <ion-col size-lg="3" size-md="12" size-xl="3" size-xs="12">
+          <img class="img-banner" src="../../assets/img/icon-location.png" alt="icon_localidad"> 
+          <label class="label">Buenos Aires, Argentina</label>
         </ion-col>
-    </ion-row> -->
-
+        <ion-col size-lg="3" size-md="12" size-xl="3" size-xs="12">
+          <img class="img-banner" src="../../assets/img/icon-envelope.png" alt="icon_localidad"> 
+          <label class="label">tecnobilateral@gmail.com</label>
+        </ion-col>
+        <ion-col size-lg="3" size-md="12" size-xl="3" size-xs="12">
+          <img class="img-banner" src="../../assets/img/icon-phone.png" alt="icon_localidad"> 
+          <label class="label">+54 9 11 4078-8374</label>
+        </ion-col>
+        <ion-col size-lg="3" size-md="12" size-xl="3" size-xs="12">
+          <img class="img-banner" src="../../assets/img/icon-clock.png" alt="icon_localidad"> 
+          <label class="label">9hs - 18hs</label>
+        </ion-col>
+        <div style="border-top: 1px solid white;width: 100%;"></div>
+        <ion-col class="col-center" size-lg="12" size-md="12" size-xl="12" size-xs="12">
+            © 2023 Tecnobilateral. Todos los derechos reservados.
+        </ion-col>         
+    </ion-row>
+    <ion-row *ngIf="isDesktop" >
+        <ion-col class="col-center" size-lg="12" size-md="12" size-xl="12" size-xs="12">
+            © 2023 Tecnobilateral. Todos los derechos reservados.
+        </ion-col>      
+    </ion-row>
 </div>

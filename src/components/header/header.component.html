@@ -1,16 +1,72 @@
-<div class="container-header">   
- <ion-row>
-    <ion-col size="6" class="colOne">
-        <h1 class="title-company">TecnoBilateral</h1>
-      </ion-col>
-      <ion-col  size="6" class="colTwo">
-        <h1 class="li-nav" *ngFor="let item of menu">{{item.title}}</h1>
-      </ion-col>
- </ion-row>
-
- <ion-row>
-  <ion-col class="colThree" size="12">
-    <h1 class="lema">"Extrayendo conocimiento a través de la analítica de datos."</h1>
-  </ion-col>
- </ion-row>
+<div class="mobile" *ngIf="isMobile">
+  <ion-menu contentId="main-content">
+      <ion-header class="header-ion">
+        <ion-toolbar>
+          <ion-title class="title-ion">Tecnobilateral</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <ion-menu-toggle>
+          <ion-list *ngFor="let item of menu">
+              <ion-item (click)="clickMenu(item)">
+                <ion-label>{{item.title}}</ion-label>
+              </ion-item>              
+            </ion-list>
+        </ion-menu-toggle>
+      </ion-content>
+    </ion-menu>
+    <div class="ion-page" id="main-content">        
+      <ion-content class="ion-padding">
+        <ion-menu-toggle>
+          <div class="background">
+              
+          </div>
+          <img class="img-menu" src="../../assets/img/hamburguesa.png" alt="menu">
+          
+        </ion-menu-toggle>
+      </ion-content>
+    </div> 
 </div>
+
+
+<div *ngIf="isDesktop">
+  <ion-row class="banner">
+    <ion-col size="3" class="colOne">
+      <h1 class="title-company">TecnoBilateral</h1>
+    </ion-col> 
+    <ion-col  size="9" class="colTwo">
+      <h1 (click)="clickMenu(item)" *ngFor="let item of menu">
+        <h1 class="li-nav">{{item.title}}</h1>
+      </h1>
+    </ion-col>
+  </ion-row>  
+
+</div>
+
+<ion-row *ngIf="isDesktop" class="bannerTwo">
+  <ion-col size-lg="3" size-md="12" size-xl="3" size-xs="12">
+    <img src="../../assets/img/icon-location.png" alt="icon_localidad"> 
+    <label class="label">Buenos Aires, Argentina</label>
+  </ion-col>
+  <ion-col size-lg="3" size-md="12" size-xl="3" size-xs="12">
+    <img src="../../assets/img/icon-envelope.png" alt="icon_localidad"> 
+    <label class="label">tecnobilateral@gmail.com</label>
+  </ion-col>
+  <ion-col size-lg="3" size-md="12" size-xl="3" size-xs="12">
+    <img src="../../assets/img/icon-phone.png" alt="icon_localidad"> 
+    <label class="label">+54 9 11 4078-8374</label>
+  </ion-col>
+  <ion-col size-lg="3" size-md="12" size-xl="3" size-xs="12">
+    <img src="../../assets/img/icon-clock.png" alt="icon_localidad"> 
+    <label class="label">9hs - 18hs</label>
+  </ion-col>
+</ion-row>
+
+<!-- <div *ngIf="isDesktop" class="container-header">  
+<ion-row>
+  <ion-col class="colThree" size="12">
+    <h1 class="lema">"Transformando Datos en Decisiones, Innovando Tu Futuro"</h1>
+  </ion-col>
+ </ion-row> 
+</div>  -->
+

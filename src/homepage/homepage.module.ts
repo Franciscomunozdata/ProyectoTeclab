@@ -12,8 +12,9 @@ import { ComponentsModule } from 'src/components/components.module';
   imports: [
     CommonModule,
     HomepageRoutingModule,
-    IonicModule,
-    ComponentsModule
+    IonicModule.forRoot(),
+    ComponentsModule,
+ 
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })

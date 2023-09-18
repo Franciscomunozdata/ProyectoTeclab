@@ -1,14 +1,11 @@
-.footer{
-    background: url('../../assets/img/img_footer.jpg') no-repeat;
+.footer{  
     position: relative;
     left: 0;
     bottom: 0;
-    height: 400px;
-    width: 100%;   
-    background-size: cover;
-    background-position: center; 
-    top: 350px;
-    filter: grayscale(85%);
+    height: 100px;
+    width: 100%;    
+    top: 0px; 
+    background-color: #0A0C11;
 }
 
 img{
@@ -31,12 +28,54 @@ label{
 }
 
 .img_redes{
-    width: 39px;
-    height: 39px;
+    width: 25px;
+    height: 25px;
     filter: revert;
+    cursor: pointer;
 }
 
 .img-col{
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    color: white;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px;
+}
+
+.col-center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.img-banner{
+    width: 15px;
+    height: 15px;
+    margin-top: 3%;
+}
+
+.label{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 15px;
+    margin-left: 3%;
+    line-height: 7px;
+}
+
+.bannerTwo{
+    background-color: #121212;
+    height:150px;
+}
+
+@media screen and (max-width: 992px)  {
+    .bannerTwo{
+        background-color: #121212;
+        height: 297px;
+    }
+
 }

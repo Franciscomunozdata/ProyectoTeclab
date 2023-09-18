@@ -1,0 +1,83 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>Solicitud de Presupuesto</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">    
+    <form [formGroup]="formGroup">
+        <div>
+        <ion-row style="margin-top: 2%;">
+        <label for="name">Nombre:</label>
+        </ion-row>
+        <ion-row>
+        <input placeholder="Ingresá tu nombre" type="text" formControlName="name"  />                
+        </ion-row>
+        <ion-row>
+        <div class="errorLabel" *ngIf="formGroup && formGroup.get('name') && formGroup.get('name')?.invalid && formGroup.get('name')?.touched">
+            El campo no puede estar vacío.
+        </div>
+        </ion-row>
+        </div>
+        <div>
+        <ion-row style="margin-top: 2%;">
+        <label for="surname">Apellido:</label>
+        </ion-row>
+        <ion-row>
+            <input placeholder="Ingresá tu apellido" type="text" formControlName="surname" />
+        </ion-row>
+        <ion-row>
+            <div class="errorLabel" *ngIf="formGroup && formGroup.get('surname') && formGroup.get('surname')?.invalid && formGroup.get('surname')?.touched">
+            El campo no puede estar vacío.
+            </div>
+        </ion-row>
+        </div>
+        <div>
+        <ion-row style="margin-top: 2%;">
+        <label for="phone">Teléfono:</label>
+        </ion-row>
+        <ion-row>
+            <input placeholder="Ingresá tu número de teléfono" type="number" formControlName="phone" />
+        </ion-row>
+        <ion-row>
+            <div class="errorLabel" *ngIf="formGroup && formGroup.get('phone') && formGroup.get('phone')?.invalid && formGroup.get('phone')?.touched">
+            El campo no puede estar vacío.
+            </div>
+        </ion-row>
+        </div>
+        <div>
+        <ion-row style="margin-top: 2%;">
+        <label for="email">Email:</label>
+        </ion-row>
+        <ion-row>
+            <input placeholder="Ingresá tu email" type="email" formControlName="email" />
+        </ion-row>
+        <ion-row>
+            <div class="errorLabel" *ngIf="formGroup && formGroup.get('email') && formGroup.get('email')?.invalid && formGroup.get('email')?.touched">
+            El campo no puede estar vacío.
+            </div>
+        </ion-row>
+        </div>
+        <div>
+        <ion-row style="margin-top: 2%;">
+        <label for="mensaje">Solicitud:</label>
+        </ion-row>
+        <ion-row>
+            <textarea formControlName="mensaje"></textarea>
+        </ion-row>
+        <ion-row>
+            <div class="errorLabel" *ngIf="formGroup && formGroup.get('mensaje') && formGroup.get('mensaje')?.invalid && formGroup.get('mensaje')?.touched">
+            El campo no puede estar vacío.
+            </div>
+        </ion-row>
+        </div>       
+    </form>
+
+    <ion-row>
+        <ion-col style="display: flex;justify-content: center;" size-lg="12" size-md="12" size-xl="12" size-xs="12">
+            <div style="margin-top: 13%;" >                  
+                <button (click)="cancel()" type="button" class="cancel">Cerrar</button>          
+                <button (click)="sendData()" type="button" [ngClass]="formGroup.invalid ? 'noDetail' : 'detail'">Cotizar</button>            
+              </div>
+        </ion-col>
+    </ion-row>    
+  </ion-content>

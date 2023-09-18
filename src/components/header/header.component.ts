@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { ModalPresupuestoComponent } from '../modal-presupuesto/modal-presupuesto.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,8 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   public menu : any[] = [];
+  public isDesktop: boolean = false;
+  public isMobile: boolean = false;
+
+  constructor(
+    private modalController: ModalController,
+    private rouer: Router
+  ){
+
+  }
 
   ngOnInit(): void {
+    this.checkScreenWidth();
+
     this.menu.push(
       {
         id:1,
@@ -16,16 +30,67 @@ export class HeaderComponent implements OnInit {
       },
       {
         id:2,
-        title: 'Productos'
+        title: '¿Quiénes somos?'
       },
       {
         id:3,
-        title: 'Servicios'
+        title: 'Productos & Servicios'
       },
       {
         id:4,
         title: 'Contacto'
+      },
+      {
+        id:5,
+        title: 'Solicitar presupuesto'
       }
     );    
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.checkScreenWidth();
+  }
+
+  
+  checkScreenWidth() {
+    const screenWidth = window.innerWidth;
+    this.isDesktop = screenWidth >= 992;
+    this.isMobile = screenWidth < 991;
+  }
+
+  clickMenu(item:any){
+    switch(item.id){
+      case 1:{
+        this.rouer.navigateByUrl('inicio');
+      }
+      break;
+      case 2:{
+        this.rouer.navigateByUrl('nosotros');
+      }
+      break;
+      case 3:{
+        this.rouer.navigateByUrl('servicios');
+      }
+      break;
+      case 4:{
+        this.rouer.navigateByUrl('contacto');
+      }
+      break;
+      case 5:{
+        this.openModal();
+      }
+      break;
+    }  
+  }
+
+  async openModal() {
+    const modal = await this.modalController.create({
+      component: ModalPresupuestoComponent,
+      componentProps: {
+        key: 'value', // Puedes pasar datos al modal a través de componentProps
+      },
+    });
+    await modal.present();
   }
 }
