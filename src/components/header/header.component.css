@@ -49,6 +49,52 @@ img{
     position: absolute;
 }
 
+
+.img-a{
+    width: 15px;
+    height: 15px;
+    margin-top: 3%;
+    position: absolute;
+    background: url('../../assets/img/icon-location.png') no-repeat;   
+    background-size: cover;
+    background-position: center;  
+}
+
+
+
+.img-b{
+    width: 15px;
+    height: 15px;
+    margin-top: 3%;
+    position: absolute;
+    background: url('../../assets/img/icon-envelope.png') no-repeat;   
+    background-size: cover;
+    background-position: center;  
+}
+
+
+
+.img-c{
+    width: 15px;
+    height: 15px;
+    margin-top: 3%;
+    position: absolute;
+    background: url('../../assets/img/icon-phone.png') no-repeat;   
+    background-size: cover;
+    background-position: center;  
+}
+
+.img-d{
+    width: 15px;
+    height: 15px;
+    margin-top: 3%;
+    position: absolute;
+    background: url('../../assets/img/icon-clock.png') no-repeat;   
+    background-size: cover;
+    background-position: center;  
+}
+
+
 .label{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
@@ -68,6 +114,10 @@ img{
     width: 48px;
     height: 46px;
     margin-top: -1%;
+    background: url('../../assets/img/hamburguesa.png') no-repeat;   
+    background-size: cover;
+    background-position: center;  
+    position: absolute; 
 }
 
 .mobile{

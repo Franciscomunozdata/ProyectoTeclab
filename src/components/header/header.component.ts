@@ -35,11 +35,7 @@ export class HeaderComponent implements OnInit {
       {
         id:3,
         title: 'Productos & Servicios'
-      },
-      {
-        id:4,
-        title: 'Contacto'
-      },
+      },     
       {
         id:5,
         title: 'Solicitar presupuesto'
@@ -72,10 +68,7 @@ export class HeaderComponent implements OnInit {
       case 3:{
         this.rouer.navigateByUrl('servicios');
       }
-      break;
-      case 4:{
-        this.rouer.navigateByUrl('contacto');
-      }
+      break;     
       break;
       case 5:{
         this.openModal();

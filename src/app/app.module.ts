@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ComponentsModule } from 'src/components/components.module';
 import { HomepageModule } from 'src/homepage/homepage.module';
 import { IonicModule } from '@ionic/angular';
+import { ProductsModule } from 'src/products/products.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { IonicModule } from '@ionic/angular';
     AppRoutingModule,
     ComponentsModule,
     HomepageModule,
+    ProductsModule,
     IonicModule.forRoot()
   ],
   providers: [],

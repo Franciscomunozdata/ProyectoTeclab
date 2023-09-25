@@ -27,12 +27,34 @@ label{
     padding-top: 10%;
 }
 
-.img_redes{
+.img_redes-one{
     width: 25px;
     height: 25px;
     filter: revert;
     cursor: pointer;
+    background: url('../../assets/img/instagram.png') no-repeat;   
+    background-size: cover;
+    background-position: center;  
 }
+.img_redes-two{
+    width: 25px;
+    height: 25px;
+    filter: revert;
+    cursor: pointer;
+    background: url('../../assets/img/facebook.png') no-repeat;   
+    background-size: cover;
+    background-position: center;  
+}
+.img_redes-three{
+    width: 25px;
+    height: 25px;
+    filter: revert;
+    cursor: pointer;
+    background: url('../../assets/img/whatsapp.png') no-repeat;   
+    background-size: cover;
+    background-position: center;  
+}
+
 
 .img-col{
     display: flex;
@@ -53,17 +75,52 @@ label{
     text-align: center;
 }
 
-.img-banner{
+.img-banner-a{
     width: 15px;
     height: 15px;
     margin-top: 3%;
+    background: url('../../assets/img/icon-location.png') no-repeat;   
+    background-size: cover;
+    background-position: center; 
+    position: absolute; 
 }
+
+.img-banner-b{
+    width: 15px;
+    height: 15px;
+    margin-top: 3%;
+    background: url('../../assets/img/icon-envelope.png') no-repeat;   
+    background-size: cover;
+    background-position: center; 
+    position: absolute; 
+}
+
+.img-banner-c{
+    width: 15px;
+    height: 15px;
+    margin-top: 3%;
+    background: url('../../assets/img/icon-phone.png') no-repeat;   
+    background-size: cover;
+    background-position: center;
+    position: absolute;  
+}
+.img-banner-d{
+    width: 15px;
+    height: 15px;
+    margin-top: 3%;
+    background: url('../../assets/img/icon-clock.png') no-repeat;   
+    background-size: cover;
+    background-position: center;  
+    position: absolute;
+}
+
+
 
 .label{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     font-size: 15px;
-    margin-left: 3%;
+    margin-left: 5%;
     line-height: 7px;
 }
 
