@@ -1,10 +1,10 @@
 <div class="footer">
     <ion-row *ngIf="isDesktop" class="img-col" style="margin-left: 1%;">     
             <ion-col class="img-col"  size-lg="1" size-md="1" size-xl="1" size-xs="1">
-                <div class="img_redes-one"></div>              
+                <div (click)="openInsta()" class="img_redes-one"></div>              
             </ion-col>  
             <ion-col class="img-col"  size-lg="1" size-md="1" size-xl="1" size-xs="1">
-                <div class="img_redes-two"></div>                
+                <a href="mailto:tecnobilateral@gmail.com?" class="img_redes-two"></a>                  
             </ion-col>  
             <ion-col class="img-col" size-lg="1" size-md="1" size-xl="1" size-xs="1">
                 <div (click)="openWA()" class="img_redes-three"></div>                 
@@ -12,10 +12,10 @@
     </ion-row> 
     <ion-row *ngIf="isMobile" class="bannerTwo">
         <ion-col class="img-col"  size-lg="1" size-md="1" size-xl="1" size-xs="1">
-            <div class="img_redes-one"></div> 
+            <div (click)="openInsta()" class="img_redes-one"></div> 
         </ion-col>  
         <ion-col class="img-col"  size-lg="1" size-md="1" size-xl="1" size-xs="1">
-            <div class="img_redes-two"></div>    
+            <a href="mailto:tecnobilateral@gmail.com?" class="img_redes-two"></a>    
         </ion-col>  
         <ion-col class="img-col" size-lg="1" size-md="1" size-xl="1" size-xs="1">
             <div (click)="openWA()" class="img_redes-three"></div>    

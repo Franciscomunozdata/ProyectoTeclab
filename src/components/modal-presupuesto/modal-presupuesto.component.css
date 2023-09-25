@@ -31,6 +31,18 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
+ion-title{
+    margin-left: 2%;
+}
+
+.wa{
+    width: 25px;
+    height: 25px;    
+    background: url('../../assets/img/whatsapp.png') no-repeat;   
+    background-size: cover;
+    background-position: center;  
+    position: absolute;
+}
 
 
 .detail{

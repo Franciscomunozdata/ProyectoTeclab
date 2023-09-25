@@ -81,14 +81,32 @@
 
 <ng-container *ngIf="showCards">
   <ion-row class="container-card-text">
-    <ion-col *ngFor="let card of cards"  size-lg="4" size-md="12" size-xl="4" size-xs="12">
+    <ion-col  size-lg="4" size-md="12" size-xl="4" size-xs="12">
       <div class="content-card">
-        <img class="img-card" src="{{card.img}}" alt="card-img">
-        <h1 class="card-title">{{card.title}}</h1>
+        <div class="img-card-f"></div>
+        <h1 class="card-title">Automatizar decisiones</h1>
         <ion-row>
-         <h5 class="text-card"> {{card.text}}</h5>
+         <h5 class="text-card">Todas las empresas tienen que tomar decisiones. De hecho, las empresas son máquinas de información. Aquellos que pueden consumir, comprender y actuar sobre la mejor información de manera óptima tienen una ventaja inherente sobre sus competidores.</h5>
         </ion-row>
-      </div>    
+      </div>         
+    </ion-col>
+    <ion-col  size-lg="4" size-md="12" size-xl="4" size-xs="12">       
+      <div class="content-card">
+        <div class="img-card-g"></div>
+        <h1 class="card-title">Simplifique los procesos</h1>
+        <ion-row>
+         <h5 class="text-card">Los procesos van de la mano con los negocios. Por un lado, son necesarios procesos para estandarizar las prácticas. Pero rápidamente los procesos comienzan a consumir la agilidad de una empresa y se gastan sumas significativas en contratar personas para poner en práctica estos procesos.</h5>
+        </ion-row>
+      </div>              
+    </ion-col>
+    <ion-col  size-lg="4" size-md="12" size-xl="4" size-xs="12">      
+      <div class="content-card">
+        <div class="img-card-h"></div>
+        <h1 class="card-title">Diferenciadores competitivos</h1>
+        <ion-row>
+         <h5 class="text-card">Las empresas verdaderamente innovadoras son capaces de crear productos basados ​​en datos que proporcionan una ventaja competitiva tan increíble que toda competencia queda obsoleta.</h5>
+        </ion-row>
+      </div>          
     </ion-col>
   </ion-row>
 </ng-container>

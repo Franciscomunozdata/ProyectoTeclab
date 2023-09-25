@@ -40,7 +40,7 @@ li{
 .content-card{
     background-color: #0A0C11;
     width: 90%;
-    height: 260px;
+    height: 295px;
     border-bottom: 1px solid #77fde8;     
     margin-bottom: 25%;
     box-shadow: 5px 2px 5px 0px #77fde8;
@@ -48,10 +48,40 @@ li{
 }
 
 
-.img-card{
+.img-card-w{
     width: 44px;
     height: 51px;
     margin-left: 6%;
+    background: url('../../assets/img/excelencia.png') no-repeat;   
+    background-size: cover;
+    background-position: center;  
+}
+
+.img-card-x{
+    width: 44px;
+    height: 51px;
+    margin-left: 6%;
+    background: url('../../assets/img/inno.png') no-repeat;   
+    background-size: cover;
+    background-position: center;  
+}
+
+.img-card-y{
+    width: 44px;
+    height: 51px;
+    margin-left: 6%;
+    background: url('../../assets/img/solucion.png') no-repeat;   
+    background-size: cover;
+    background-position: center;  
+}
+
+.img-card-z{
+    width: 44px;
+    height: 51px;
+    margin-left: 6%;
+    background: url('../../assets/img/apoyar.png') no-repeat;   
+    background-size: cover;
+    background-position: center;  
 }
 
 .img-relleno-a{

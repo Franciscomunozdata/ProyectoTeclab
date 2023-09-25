@@ -10,10 +10,7 @@ export class FooterComponent implements OnInit {
   public isDesktop: boolean = false;
   public isMobile: boolean = false;
   
-  openWA(){
-    const whatsappUrl = `https://wa.me/send?phone=${this.whatsappNumber}`;
-    window.open(whatsappUrl, '_blank');
-  }
+ 
 
   ngOnInit(): void {
     this.checkScreenWidth();
@@ -31,4 +28,12 @@ export class FooterComponent implements OnInit {
     this.isMobile = screenWidth < 991;
   }
 
+  openWA(){
+    const whatsappUrl = `https://wa.me/send?phone=${this.whatsappNumber}`;
+    window.open(whatsappUrl, '_blank');
+  }
+
+  openInsta(){ 
+    window.open('https://instagram.com/tecnobilateral?igshid=MzRlODBiNWFlZA==', '_blank');   
+  }
 }
